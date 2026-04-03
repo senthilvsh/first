@@ -2,6 +2,6 @@
 
 int main()
 {
-	std::cout << "First\n";
+	std::cout << "First v0.1\n";
 	return 0;
 }
