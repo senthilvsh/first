@@ -5,26 +5,24 @@ A repository to explore GitHub features.
 More details can be found [here](docs/details.md).
 
 
+| Status    | Task Description          | Priority |
+| :-------: | :------------------------ | :------: |
+| &#x2705;  | Setup repository          | High     |
+| &#x2B1C;  | Configure CI/CD           | High     |
+| &#x2610;  | Write API documentation   | Medium   |
+| &#x2610;  | User testing              | Low      |
+
+
+
 Phase 1
 
-
-| Task                                    |
-|------------------------------|----------|
+:white_large_square:
+ ☐ ☑
+| Task                      | Status              |
+| :--- | :---: |
 | Instruction Set Architecture | ✅       |
-| VM Core                      | ⬜  - [ ]       |
+| VM Core                      | ⬜  |
 
-
-| Status | Task Description | Priority |
-| :---: | :--- | :---: |
-| ✅ | Finalize API Documentation | High |
-| 🟥 | Implement User Authentication | High |
-| ⬜ | Research Beta Feedback | Low |
-
-
-|Task|Status|
-|---|---|
-| Instruction Set Architecture | [✅]|
-| VM Core | |
 
 - Registers
 - Real Memory
