@@ -1,1 +1,2 @@
-* text=auto whitespace=cr-at-eol
+# Disable all automatic line-ending conversions
+* -text whitespace=cr-at-eol
