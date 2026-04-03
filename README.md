@@ -5,13 +5,22 @@ A repository to explore GitHub features.
 More details can be found [here](docs/details.md).
 
 
+## Setup
+
+Run this command after cloning.
+
+```
+git config core.hooksPath .githooks
+```
+
+
 ## Roadmap
 
-### Design
+#### Design
 
-- Instruction Set Architecture
+- [ ] Instruction Set Architecture
 
-### Phase 1
+#### Phase 1
 
 - [ ] Core
     - [x] Data Movement
@@ -22,34 +31,26 @@ More details can be found [here](docs/details.md).
     - [x] Subroutine
 - [ ] Assembler
 
-### Phase 2
+#### Phase 2
 
-- Display
-- Keyboard
-- Interrupts
+- [ ] Display
+- [ ] Keyboard
+- [ ] Interrupts
 
-### Phase 3
+#### Phase 3
 
-- Virtual Memory
-- BIOS to setup page tables
+- [ ] Virtual Memory
+- [ ] BIOS to setup page tables
 
-### Phase 4
+#### Phase 4
 
-- Single-tasking OS Kernel
-- Hardware Abstraction
-- User Program
-- Binary Program Format
-- System Call
+- [ ] Single-tasking OS Kernel
+- [ ] Hardware Abstraction
+- [ ] User Program
+- [ ] Binary Program Format
+- [ ] System Call
 
-### Phase 5
+#### Phase 5
 
-- Hardware Timer Interrupt
-- Context Switch
-Phase 5
-- Multi-Tasking OS Kernel
-
-Run this command after cloning.
-
-```
-git config core.hooksPath .githooks
-```
+- [ ] Hardware Timer Interrupt
+- [ ] Context Switch
