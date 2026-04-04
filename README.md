@@ -4,6 +4,8 @@ A repository to explore GitHub features.
 
 More details can be found [here](docs/details.md).
 
+Instruction Set Architecture can be found [here](docs/isa.md).
+
 
 ## Roadmap
 
