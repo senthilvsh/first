@@ -1,0 +1,11 @@
+#!/bin/sh
+files=$(git diff --cached --name-only --diff-filter=ACM)
+
+for file in $files; do
+  if file "$file" | grep -q "text"; then
+    if grep -q $'\n' "$file" && ! grep -q $'\r\n' "$file"; then
+      echo "ERROR: $file contains LF-only line endings. Convert to CRLF before committing."
+      exit 1
+    fi
+  fi
+done
