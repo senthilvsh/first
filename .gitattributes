@@ -1,2 +1,2 @@
-# Disable all automatic line-ending conversions
-* -text whitespace=cr-at-eol
+# Ensure all files are treated as text and checked out with Windows-style CRLF line endings
+* text eol=crlf
