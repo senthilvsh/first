@@ -1,11 +1,18 @@
-#!/bin/sh
-files=$(git diff --cached --name-only --diff-filter=ACM)
+#!/bin/bash
 
-for file in $files; do
-  if file "$file" | grep -q "text"; then
-    if grep -q $'\n' "$file" && ! grep -q $'\r\n' "$file"; then
-      echo "ERROR: $file contains LF-only line endings. Convert to CRLF before committing."
-      exit 1
+# Get list of staged files
+staged_files=$(git diff --cached --name-only --diff-filter=d)
+
+for file in $staged_files; do
+    # Only check text files
+    if file "$file" | grep -q "text"; then
+        # Check if the file is MISSING 'CRLF' in its description
+        # (This means it is likely LF-only)
+        if ! file "$file" | grep -q "CRLF"; then
+            echo "REJECTED: $file has LF line endings. Please convert to CRLF."
+            exit 1
+        fi
     fi
-  fi
 done
+
+exit 0
